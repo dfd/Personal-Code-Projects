@@ -1,0 +1,382 @@
+---
+title: "Assignment 4 - Data Analytics for Engineering Systems (12709)"
+output:
+  html_document: default
+  html_notebook: default
+---
+
+#Question 1A
+
+There is a lot of data available in the "Data to SEE". Quite a lot of this information is irrelevant. These are mostly logistical details and do not hold much importance for our analysis and thus can be removed. 
+
+The emissions data in the "Data to SEE"" is mostly coherent and could be used for research purposes. It is a standard table with specific columns having details on the plant. Each plant's data is mentioned for a specific year by row. One problem with such a dataset is that there does not inherently exist a primary key for the database along any column. Also, the county data is not required as the question set does not require an grouping at the county level. Also, it includes a lot of blank values, which may have been NA or Zero.
+
+Many of the columns in the facility data in the "Data to SEE" are also quite irrelevant. The first issue is that the data in the CSV file has been shifted one column ahead such that the column names depict the wrong elements with "Programs(s) Selected" column displaying the year for which data has been found, the "EPA Region"" is displaying the "Program(s) Selected", the "NERC Region" is displaying the "EPA Region" and so on. It also includes lots of redundant columns which are not useful for our analysis, like "County", "County Code", emission control methods for specific pollutants, fuel types, operating authority, FIPS code, commercial operation date etc. These may be required for administration purposes to identify each plant and its jurisdiction but mostly useless for our analysis.
+
+The "Data to Use" has a file EPA Download Emissions Gathered has a very unique structure. There are some columns giving the plant's name, plant ID, year for which data has been calculated. The unique part is that it has all the data "gathered" up in two columns as "Attribute Values" and "Attribute Names". These attributes include gross load, heat input, NERC region, EPA region, emission data etc. For practical purposes, it will make more sense to spread the Attribute Values around the Attribute Names This "spreading" will be a part of our data cleaning and transforming process.
+
+#Question 1B
+
+The Data Dictionary has been improved by removing the redundant columns and adding new descriptions. There is a new colun which emphasizes data class i.e. factor or numeric. Also, the data type is mentioned, such as int, char and double. The unit in which the data is expressed is also mentioned like tons, MMBtu etc. Also, the data range is specified to give some idea on how the data looks like.
+
+#Question 1C
+
+There is some data cleaning and data transformation required before we can perform the necessary operations. For performing the necessary data cleaning, first we will insert the relevant data libraries for this and future questions.
+
+
+##Inserting the relevant libraries
+```{r}
+setwd("C:/Users/Yash Kumar/Desktop/Studies/Fall 2017/Data Analytics/Assignments/Individual Data Assignment 4/HW4-Data To USE")
+library(readr)
+library(stringr)
+library(dplyr)
+library(tidyr)
+library(ggplot2)
+library(geosphere)
+library(MASS)
+```
+
+##Cleaning the Data
+
+The second step involves putting the data in a new dataframe. For this, we need to spread the data as mentioned in Question 1A. Also, the missing data has been given a string value. It needs to be replaced with NA as it is a missing value. The attribute names have imperfections (extra dots). This has been removed using the gsub function. The uid column needs to be dropped so that the spread function can be applied. Also, the missing values have been characterized by two strings, as specified in the code. These have been converted to NAs.
+
+```{r}
+EPADownloademissionGathered <- read_csv("C:/Users/Yash Kumar/Desktop/Studies/Fall 2017/Data Analytics/Assignments/Individual Data Assignment 4/HW4-Data To USE/EPADownloademissionGathered.csv")
+EPADownloademissionGathered[ EPADownloademissionGathered == "ThisIsAnotherMissingValue" | EPADownloademissionGathered == "ThisIsAMissingValue"] <- NA
+EPADownloademissionGathered$attributeName <- gsub("[[:punct:]]","",EPADownloademissionGathered$attributeName)
+names(EPADownloademissionGathered) <- c("UID","State","Facility_Name","Facility_ID","Program","Year","Attribute_Name","Attribute_Value") 
+MyData.df <- EPADownloademissionGathered[,2:8]
+MyData.df <- spread(MyData.df, Attribute_Name, Attribute_Value)
+
+```
+
+```{r}
+unique(EPADownloademissionGathered$Attribute_Name)
+```
+
+
+After using the spread function, each dataset gets the char data type. Thus, the appropriate data class needs to be assigned to each column, so that the right type of functions can be appropriately applied to them.
+
+
+```{r}
+MyData.df$EPARegion <- as.factor(MyData.df$EPARegion)
+MyData.df$State <- as.factor(MyData.df$State)
+MyData.df$Facility_Name <- as.factor(MyData.df$Facility_Name)
+MyData.df$Facility_ID <- as.factor(MyData.df$Facility_ID)
+MyData.df$Program <- as.factor(MyData.df$Program)
+MyData.df$County <- as.factor(MyData.df$County)
+MyData.df$NERCRegion <- as.factor(MyData.df$NERCRegion)
+
+MyData.df$Year <- as.numeric(MyData.df$Year)
+MyData.df$FacilityLatitude <- as.numeric(MyData.df$FacilityLatitude)
+MyData.df$FacilityLongitude <- as.numeric(MyData.df$FacilityLongitude)
+MyData.df$GrossLoadMWh <- as.numeric(MyData.df$GrossLoadMWh)
+MyData.df$HeatInputMMBtu <- as.numeric(MyData.df$HeatInputMMBtu)
+MyData.df$NOxtons <- as.numeric(MyData.df$NOxtons)
+MyData.df$SO2tons <- as.numeric(MyData.df$SO2tons)
+MyData.df$SteamLoad1000lb <- as.numeric(MyData.df$SteamLoad1000lb)
+MyData.df$CO2shorttons <- as.numeric(MyData.df$CO2shorttons)
+
+
+```
+
+#Question 1C
+
+Now, according to me, the most important data is the State, Facility_ID, GrossLoadMWh, NOxtons, CO2shorttons and SO2tons. This is because the emissions and gross load values are used multiple times throughout the code. There have been multiple groupings by state. Also, the Facility_ID is particularly important as it is acts as the primary key if the year is ignored e.g. in Question 5
+
+```{r}
+summary(MyData.df[,c("State","Facility_ID","GrossLoadMWh","SO2tons","NOxtons","CO2shorttons")])
+```
+The most occurences are for Texas. This means it has the highest number of plants. Facility_ID is indeed unique as the maximum is 7 (because of seven different years). There are 0 Gross load plants as well. These might have been shut down but not decommissioned or were under repair throughout the year. Similiarly, we get zero values for SO2 and NOx tons. There are a lot of NA values as well.
+
+#Question 2A (EPA Regions)
+
+In this we need to identify the number of unique EPA regions. For finding the number and name of EPA regions, we use the unique and length function.
+
+```{r}
+unique(MyData.df$EPARegion[!is.na(MyData.df$EPARegion)]);
+length(unique(MyData.df$EPARegion[!is.na(MyData.df$EPARegion)]))
+
+```
+
+Thus, there are 10 EPA Regions, which demarcate the EPA jurisdiction.
+
+#Question 2A (NERC Regions)
+
+Similarly, for finding the number and name of NERC regions, we use the unique and length function.
+
+```{r}
+unique(MyData.df$NERCRegion[!is.na(MyData.df$NERCRegion)])
+length(unique(MyData.df$NERCRegion[!is.na(MyData.df$NERCRegion)]))
+```
+
+There are 10 NERC Regions, which demarcate the NERC jurisdiction. The NERC jurisdiction governs the electrical grid and assesses its reliability and stability, whereas the EPA jurisdiction is more concerned about the environment, in terms of emissions.
+
+#Question 2A (States with largest number of plants)
+
+For finding this, we keep only the distinct facilities and their respective states. Then, we aggregate the subset by states and arrange it by descending number of plants per state. Finally, to only keep the top 3, we slice the top 3 rows.
+```{r}
+new <- distinct(MyData.df,Facility_ID, State)
+
+num <- aggregate(Facility_ID~State,new,length)
+arrange(num,desc(Facility_ID)) %>%
+  slice(1:3)
+
+```
+
+The results are not surprising. Texas, California and New York are the largest states. This might be because they are highly populous and large states. Texas is the largest. It is interesting to note that Texas has its own interconnection in the electrical grid as well, known as the Texas Interconnection.
+
+#Question 2B
+
+This requires data filtering. Firstly, it is important to omit all the NA values to get the proper results. Then, we need to calculate the average values of Gross Load, Heat Input and emissions over the years for each plant. After that, we will use the quantile function to compare each plant's data with the 75th percentile gross load and heat input, and the 50th percentile of emissions.
+
+```{r}
+tx <- filter(MyData.df, State=="TX", !is.na(GrossLoadMWh), !is.na(HeatInputMMBtu), !is.na(CO2shorttons), !is.na(SO2tons), !is.na(NOxtons))
+
+mean_tx <- tx %>%
+  group_by(Facility_Name) %>%
+  summarise(GrossLoadMWh = mean(GrossLoadMWh), HeatInputMMBtu = mean(HeatInputMMBtu), CO2shorttons = mean(CO2shorttons), SO2tons = mean(SO2tons), NOxtons = mean(NOxtons))
+
+
+
+chosen_tx <- mean_tx %>% filter((HeatInputMMBtu>quantile(HeatInputMMBtu, 0.75)) & (GrossLoadMWh>quantile(GrossLoadMWh, 0.75)) & ((SO2tons<quantile(SO2tons, 0.5)) |(CO2shorttons<quantile(CO2shorttons, 0.5))|(NOxtons<quantile(NOxtons, 0.5))))
+# Checking the appropriate quantiles
+
+
+chosen_tx
+```
+
+Thus, there are three plants which fulfil this criteria. These three plants have highly comparable emissions. It is not such that only one emission criteria is being fulfilled for one plant, and another criteria for the other plant. It can be inferred that all these plants must be having highly efficient emission control systems in place.
+
+#Question 3A
+
+This part requires the aggregation of all the data by the respective year. We will use the group by and summarise_all function to get the data. We also need to keep the criteria na.rm = TRUE, so that the NA values do not interfere with the sum function and do not throw out an NA value.
+
+```{r}
+Sub_MyData <- MyData.df[,c("GrossLoadMWh","HeatInputMMBtu","SO2tons","CO2shorttons","NOxtons")]
+
+Sub_MyData %>% 
+  group_by(MyData.df$Year) %>% 
+  summarise_all(funs(sum), na.rm = TRUE)
+```
+It is heartening to see that all the data indicates a decline in the total energy required and decline in emissions. Notably, NOx and SO2 emissions are decreasing rapidly. The total energy required can be declining due to decreased demand, distributed sources and improving efficiency. 
+
+#Question 3B
+
+For this, we again filter the 2015 data, arrange the plants by decreasing load and slice the top 5 plants. Then, we search for these facilities in the original data and sum the data for each of the years. We plot the data using ggplot and a line function looks best to represent continuous data. First we plotted all the values on the log scale, but it does not display the trends properly, so we switched to individual graphs.
+
+```{r}
+GrossLoad2015 <-
+  filter(MyData.df, Year == 2015) %>%
+  arrange(desc(GrossLoadMWh)) %>%
+  slice(1:5)
+GrossLoad2015[,c("Facility_ID","Facility_Name")]
+
+New_subset <- filter(MyData.df, MyData.df$Facility_ID %in% GrossLoad2015$Facility_ID)
+PlotData <- New_subset[,c("GrossLoadMWh","HeatInputMMBtu","SO2tons","NOxtons","CO2shorttons")] %>% 
+  aggregate(by = list(New_subset$Year), FUN = sum, na.rm = TRUE)
+PlotData
+ggplot(data = PlotData, aes(x = Group.1)) + geom_line(aes(y = PlotData$GrossLoadMWh, colour = "GrossLoadMWh"))+ geom_line(aes(y = PlotData$HeatInputMMBtu, colour = "HeatInputMMBtu"))+ geom_line(aes(y = PlotData$SO2tons, colour = "SO2tons"))+ geom_line(aes(y = PlotData$NOxtons, colour = "NOxtons"))+ geom_line(aes(y = PlotData$CO2shorttons, colour = "CO2shorttons")) + scale_y_log10() 
+
+ggplot(data = PlotData, aes(x = Group.1, y = GrossLoadMWh)) + geom_point() + geom_path() + labs(x = "Year")
+ggplot(data = PlotData, aes(x = Group.1, y = HeatInputMMBtu)) + geom_point() + geom_path() + labs(x = "Year")
+ggplot(data = PlotData, aes(x = Group.1, y = SO2tons)) + geom_point() + geom_path() + labs(x = "Year")
+ggplot(data = PlotData, aes(x = Group.1, y = NOxtons)) + geom_point() + geom_path() + labs(x = "Year")
+ggplot(data = PlotData, aes(x = Group.1, y = CO2shorttons)) + geom_point() + geom_path() + labs(x = "Year")
+
+
+```
+Emission controls for the plants are definitely improving. Even though the gross load has increased in net terms, the emissions have a marked decrease. SO2 and NOx emissions have a monotonic decrease during the period, emphasizing how emission controls are improving with time.
+
+#Question 3C (Top EPA Regions)
+
+```{r}
+Sub1_MyData <- filter(MyData.df[,c("EPARegion","GrossLoadMWh","HeatInputMMBtu","SO2tons","CO2shorttons","NOxtons")], MyData.df$Year == 2016)
+Sub2_MyData <- Sub1_MyData[,c("GrossLoadMWh","HeatInputMMBtu","SO2tons","CO2shorttons","NOxtons")]
+#sum(MyData.df$HeatInputMMBtu, na.rm = TRUE)
+EPA_summary <- Sub2_MyData %>% 
+  group_by(Sub1_MyData$EPARegion) %>% 
+  summarise_all(funs(sum), na.rm = TRUE)
+Chosen_EPA <- EPA_summary %>%
+  arrange(desc(GrossLoadMWh)) %>%
+  slice(1:5)
+colnames(Chosen_EPA)[1] <- "EPARegion"
+ggplot(data = Chosen_EPA, aes(x = reorder(EPARegion, -GrossLoadMWh), y = GrossLoadMWh)) + geom_col() + labs(x = "EPA Region")
+ggplot(data = Chosen_EPA, aes(x = reorder(EPARegion, -GrossLoadMWh), y = HeatInputMMBtu)) + geom_col()+ labs(x = "EPA Region")
+ggplot(data = Chosen_EPA, aes(x = reorder(EPARegion, -GrossLoadMWh), y = NOxtons)) + geom_col()+ labs(x = "EPA Region")
+ggplot(data = Chosen_EPA, aes(x = reorder(EPARegion, -GrossLoadMWh), y = SO2tons)) + geom_col()+ labs(x = "EPA Region")
+ggplot(data = Chosen_EPA, aes(x = reorder(EPARegion, -GrossLoadMWh), y = CO2shorttons)) + geom_col()+ labs(x = "EPA Region")
+
+```
+
+The graphs have been ordered in decreasing grossload terms to observe emission trends. It shows that EPA Region 6 is lax in emission controls. Its NOx and SO2 emissions are not following a decreasing a trend in emissions. EPA Region 5 is the worst as it has even lower gross load than region 6, but still has NOx emissions as much as the highest, SO2 emissions are slightly lower than region 6, and CO2 emissions is same as region 6. 
+
+
+
+#Question 3C (Top NERC Regions)
+
+The same grouping, as in the previous region, needs to be repeated with the NERC regions in this question:
+
+```{r}
+Sub3_MyData <- filter(MyData.df[,c("NERCRegion","GrossLoadMWh","HeatInputMMBtu","SO2tons","CO2shorttons","NOxtons")], MyData.df$Year == 2016)
+Sub4_MyData <- Sub3_MyData[,c("GrossLoadMWh","HeatInputMMBtu","SO2tons","CO2shorttons","NOxtons")]
+NERC_summary <- Sub4_MyData %>% 
+  group_by(Sub3_MyData$NERCRegion) %>% 
+  summarise_all(funs(sum), na.rm = TRUE) %>%
+  slice(1:10)
+Chosen_NERC <- NERC_summary %>%
+  arrange(desc(GrossLoadMWh)) %>%
+  slice(1:5)
+colnames(Chosen_NERC)[1] <- "NERCRegion"
+ggplot(data = Chosen_NERC, aes(x = reorder(NERCRegion, -GrossLoadMWh), y = GrossLoadMWh)) + geom_col()+ labs(x = "NERC Region")
+ggplot(data = Chosen_NERC, aes(x = reorder(NERCRegion, -GrossLoadMWh), y = HeatInputMMBtu)) + geom_col()+ labs(x = "NERC Region")
+ggplot(data = Chosen_NERC, aes(x = reorder(NERCRegion, -GrossLoadMWh), y = NOxtons)) + geom_col()+ labs(x = "NERC Region")
+ggplot(data = Chosen_NERC, aes(x = reorder(NERCRegion, -GrossLoadMWh), y = SO2tons)) + geom_col()+ labs(x = "NERC Region")
+ggplot(data = Chosen_NERC, aes(x = reorder(NERCRegion, -GrossLoadMWh), y = CO2shorttons)) + geom_col()+ labs(x = "NERC Region")
+```
+Mostly the NERC regions are following the same trend as the gross load. However, their SO2 emissions are not correlated to their gross loads. The highest gross load region SERC is 4th in SO2 emissions. Whereas ECAR, which is second in gross load, has the highest SO2 emissions by quite a margin. Also, the lowest load regions, SPP and ERCOT, have comparatively high emissions.
+
+
+#Question 4
+
+The biggest issue governing which sort of distribution to use is that it will be difficult to explain the patterns of 50 states. Thus, it makes more sense to focus on states which have highe power generation. As a rule of thumb, the top energy producing states are likely to emit more. Then, we could see the sort of emission distribution which emerges for them. Firstly, it is crucial that we focus only on the latest data. So ,we will filter the 2016 data and keep it. The Gross Load benchmark should provide a benchmark on which states have the highest load. This will help us to streamline the analysis.
+
+So , we calculate the total Gross Load of the top 20 statesin 2016 and order it. Also, in the same order we would like to observe the NOx emissions to see if the follow the gross load trend.
+
+
+
+```{r}
+Data_2016 <- MyData.df[,c("State","GrossLoadMWh","HeatInputMMBtu","SO2tons","CO2shorttons","NOxtons")] %>%
+  filter(MyData.df$Year == 2016)
+
+
+Data_2016_sum <- Data_2016 %>%
+  group_by(State) %>%
+  summarise_all(funs(sum), na.rm = TRUE)
+
+Data_2016_sum <- Data_2016_sum %>%
+  arrange(desc(GrossLoadMWh)) %>%
+  slice(1:20)
+
+ggplot(data = Data_2016_sum, aes(x = reorder(State, -GrossLoadMWh), y = GrossLoadMWh)) + geom_col()+ labs(x = "State")
+ggplot(data = Data_2016_sum, aes(x = reorder(State, -GrossLoadMWh), y = NOxtons)) + geom_col()+ labs(x = "State")
+
+```
+The results are interesting. Although, it is no surprise that Texas is at the top, as it has the highest number of plants, but is interesting to see that CA and NY are far behind. Also, Texas is ahead by a huge margin. This shows how distributed generation has started to decrease the net generation by plants and creating more and more point source generation (e.g. PV)
+
+In terms of NOx emissions, California performs the best amongst the top 20 states. Also, states like MO, IN and KY have higher emissions compared to average.
+
+
+Next, we would like to analyze how the patterns differ by individual plants. This time, we will find the top 20 states, in terms of highest average gross load generation, arrange the states in that order and look at the Heat input data. This has also been done for the SO2 emissions (The gross load data is for reference).
+
+```{r}
+
+Data_2016_group <- Data_2016 %>%
+  group_by(State) %>%
+  summarise_all(funs(mean), na.rm = TRUE)
+
+Data_2016_group <- Data_2016_group %>%
+  arrange(desc(GrossLoadMWh)) %>%
+  slice(1:20)
+
+
+ggplot(data = Data_2016_group, aes(x = reorder(State, -GrossLoadMWh), y = HeatInputMMBtu)) + geom_col()+ labs(x = "State")
+ggplot(data = Data_2016_group, aes(x = reorder(State, -GrossLoadMWh), y = SO2tons)) + geom_col()+ labs(x = "State")
+
+```
+
+Notably, the Heat Input data also follows the same trend as the Gross Load. However, the top states have completely changed. We have states like Tennessee and West Virginia at the top, with Texas and Florida way behind. California does not even feature on the list, as it has smaller gas plants, and not energy intensive coal plants. Also, California is highly dependent on distributed renewable sources.
+
+It is interesting to note that the SO2 emissions are not at all following any specific trend. The state of North Dakota has very high emmissions compared to the Gross Load it generates. the same is true for Montana. North Dakota is the highest crude oil producing state and Montana is the sixth highest in coal. They will need to enforce better emission controls. They do provide energy security to the nation, but it is harmful for the regional population.
+
+
+Next, we would like to see a detailed analysis of the CO2 emissions, as CO2 emission are the most important standard considered for environmental pollution. For this we will draw a boxplots of the top energy producing states that were checked in the first part of question 5. For this we filtered out the top 20 states and arranged them in the gross load order.
+
+
+```{r}
+
+Data_2016_box <- Data_2016
+
+Data_2016_box <- Data_2016_box %>%
+  drop_na()
+
+
+Data_2016_box <- filter(Data_2016_box, State =="TX"|State =="FL"|State =="PA"|State =="OH"|State =="IN"|State =="AL"|State =="GA"|State =="KY"|State =="IL"|State =="WV"|State =="CA"|State =="LA"|State =="NC"|State =="MO"|State =="AZ"|State =="MI"|State =="NY"|State =="OK"|State =="WI"|State =="MS")
+
+Data_2016_box$State <- factor(Data_2016_box$State <- ordered(Data_2016_box$State, levels=c("TX","FL","PA","OH","IN","AL","GA","KY","IL","WV","CA","LA","NC","MO","AZ","MI","NY","OK","WI","MS")))
+# filtering the top 20 states manually
+
+ggplot(data = Data_2016_box, aes(x = State, y = CO2shorttons)) + geom_boxplot()
+
+
+```
+
+
+CA continues to maintain the lowest emissions for CO2, which is very impressive. Their progressive policies on renewables is allowing for this increased reduction in CO2 emissions. New York is also another such state which has a really low median emission. West Virginia has a really high median CO2 emission. Also, the really large outliers most probably point to the few coal plants in the state, like in AL, MO and TX.
+
+
+My primary recommendation to the EPA manager will be to not sacrifice the major oil and coal producing states at the altar of energy security. They should be apportioned appropriate funding to regulate emissions so that the local communities do not have to suffer.
+
+
+
+#Question 5
+
+This metric basically needs to consider two weights. The first is the number of plants and the other is the distance between plants. It is better to take the mean distance. If we took the the sum of the distance, we will give even more weight the number of plants as more plants will lead to increasing distance. Also, we need to get a combination of all two plants and their latitudes and longitudes. For this, we just created an inner join with the dataset on itself to join the two. This gave a set which contained a pairwise combination of every two plants in the state. Then we removed those plants that had zero distance between them, as they might have entered due to name change. Also, we removed those records which had the same facility_id listed twice in a row.
+
+Then, the distance between the two plants was found using the coordinate data with the dist_km function. Then, we grouped the dataset by state and summarized the distance as the mean distance between two plants.
+
+Then, we created another dataset with the number of plants in each state and joined the two datasets. Finally, the new metric is the number of plants divided by the mean distance between two states. Dividing the distance inversely weights the distance between the two plants and thus satisfies the metric.
+
+Later, it was realized that the values are not normalized, we might be giving more weight to the distance inverse, or number of plants. Here we, choose to use the Z-score standardization to normalize the values. The integer scaling normalization method was rejected as it created infinite values and weighted the denominator more than the numerator. It is found out by subtracting the dataset's mean from the observation and dividing the whole result by the standard deviation.
+
+```{r}
+geospat.df <- MyData.df[,c("State","Facility_ID","FacilityLongitude", "FacilityLatitude")]
+geospat.df <- unique(geospat.df)      #to remove copies of the same facility
+
+
+geoset <- inner_join(geospat.df,geospat.df, by = "State", copy = FALSE, suffix = c(".1",".2"))  #suffixes given to distinguish between two facilities
+geoset <- filter(geoset, Facility_ID.1 != Facility_ID.2)
+
+
+geoset <- mutate(geoset, dist_km := distGeo(matrix(c(FacilityLongitude.1,FacilityLatitude.1), ncol = 2), 
+                                  matrix(c(FacilityLongitude.2,FacilityLatitude.2), ncol = 2))/1000) #distGeo function used to calculate distance in m. This was divided by 1000 to give distance in kilometers
+
+
+geoset <- filter(geoset, dist_km != 0) #removing rows with facility distance equal to zero
+
+geoset$dist_km <- as.numeric(geoset$dist_km) #dist_km was saved as a different data type
+
+
+gr_geoset <- geoset[,c("State","dist_km")] %>%  #mean of distances taken and grouped by state
+  group_by(State) %>%
+  summarise_all(funs(mean), na.rm = TRUE)
+
+no_plants <- aggregate(Facility_ID~State,new,length) #Creating a new dataframe grouped by state and their number of facilities
+
+new_metric <- inner_join(gr_geoset, no_plants, by = "State") #Creating a new set with mean distance and number of plants for each state
+
+new_metric <- mutate(new_metric, metric1 = new_metric$Facility_ID/new_metric$dist_km) #new metric created as new_metric_normalized$metric1
+
+
+new_metric_normalized <- inner_join(gr_geoset, no_plants, by = "State") #new dataset created for the new metric
+
+mu_dist <- mean(new_metric_normalized$dist_km)    #mean of distance data
+sigma_dist   <- sqrt (var(new_metric_normalized$dist_km)) #standard deviation of distance data
+
+mu_no <- mean(new_metric_normalized$Facility_ID)  #mean number of plants for a state
+sigma_no   <- sqrt (var(new_metric_normalized$Facility_ID))  #standard deviation of count data
+
+
+new_metric_normalized <- mutate(new_metric_normalized, metric1 = (new_metric_normalized$Facility_ID - mu_no)/sigma_no/(new_metric_normalized$dist_km-mu_dist)*sigma_dist)    #normalized metric created
+
+arrange(new_metric,desc(metric1)) %>%     #choosing top 3 for first metric
+  slice(1:3)
+
+arrange(new_metric_normalized,desc(metric1)) %>%     #choosing top 3 for the normalized metric
+  slice(1:3)
+```
+
+In the first case, NJ, CA, TX have the top values. This means that in our first metric, the number of plants are weighted more as TX and CA had the highest number of plants and are in the top as well. In the normalized metric, the results are more interesting. KY, PA and OH top the list. The second metric seems more fair than the first. However, to improve the metric, it would probably be even better to normalize the values even before grouping them. This will give the highly normalized and weighted metric.
+
+
+

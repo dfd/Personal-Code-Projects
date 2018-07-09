@@ -1,0 +1,566 @@
+State,Facility Name,Facility ID (ORISPL),Unit ID,Caveat
+AL,Plant H. Allen Franklin,7710,NA,Facility name change from Goat Rock CC on 09/11/2002
+MS,"BTEC Southaven, LLC",55219,NA,Facility name change from Duke Energy Southaven on 10/25/2004
+MS,"BTEC Southaven, LLC",55219,NA,"Facility name change from Duke Energy Southaven, LLC on 02/11/2002"
+MS,"BTEC Southaven, LLC",55219,NA,"Facility name change from Duke Energy Southaven, Llc on 12/13/2001"
+MS,"BTEC Southaven, LLC",55219,NA,Facility name change from KGen Southaven LLC on 10/04/2006
+CA,Coolwater Generating Station,329,NA,Facility name change from Alta (Cool Water) on 07/19/2002
+GA,MPC Generating,7764,NA,Facility name change from Monroe Power Plant on 02/11/2002
+GA,Dahlberg (Jackson County),7765,NA,Facility name change from Jackson County Combustion Turbine on 12/13/2001
+TX,Twin Oaks,7030,NA,Facility name change from Tnp One on 07/15/2002
+TX,Twin Oaks,7030,NA,Facility name change from TNP One on 01/07/2003
+GA,Washington County Power,55332,NA,Facility name change from Tiger Creek Power Facility on 04/23/2002
+CA,Donald Von Raesfeld,56026,NA,Facility name change from Pico Power Plant on 02/03/2005
+AZ,Desert Basin Generating Station,55129,NA,Facility name change from Reliant Energy Desert Basin on 10/27/2003
+AZ,Desert Basin Generating Station,55129,NA,Facility name change from Desert Basin - Reliant Energy on 07/15/2002
+MS,KGen Enterprise Facility,55373,NA,"Facility name change from KGen Enterprise, LLC on 10/25/2004"
+MS,KGen Enterprise Facility,55373,NA,"Facility name change from Duke Energy Enterprise, LLC on 10/25/2004"
+MS,KGen Enterprise Facility,55373,NA,"Facility name change from Duke Energy Enterprise, LLC on 02/11/2002"
+MS,KGen Enterprise Facility,55373,NA,"Facility name change from Duke Energy Enterprise, Llc on 12/13/2001"
+MS,KGen Enterprise Facility,55373,NA,Facility name change from Duke Energy Enterprise on 09/19/2002
+MS,KGen Enterprise Facility,55373,NA,Facility name change from KGen Enterprise LLC on 06/21/2006
+AR,Dell Power Plant,55340,NA,"Facility name change from TPS - Dell, LLC on 02/11/2002"
+AR,Dell Power Plant,55340,NA,"Facility name change from Genpower - Dell, Llc on 12/13/2001"
+AR,Dell Power Plant,55340,NA,Facility name change from TPS - Dell on 05/11/2006
+TX,Odessa Ector Generating Station,55215,NA,Facility name change from Permian Generating Station on 02/11/2002
+TX,Wolf Hollow Generating Station,55139,NA,Facility name change from AES Wolf Hollow on 01/18/2005
+OH,Omega JV2 Bowling Green,7783,NA,Facility name change from Amp-ohio Bowling Green on 12/13/2001
+CA,"Dynegy South Bay, LLC",310,NA,"Facility name change from Duke Energy South Bay Power Plant, LLC on 05/18/2006"
+AR,Hot Spring  Energy Facility,55418,NA,Facility name change from Hot Spring Energy Facility on 10/25/2004
+AR,Hot Spring  Energy Facility,55418,NA,Facility name change from Duke Energy Hot Spring LLC on 11/03/2003
+TX,Forney Power Plant,55480,NA,Facility name change from Forney Power Plant on 08/03/2005
+TX,Oak Grove,6180,NA,Facility name change from Twin Oak on 03/22/2007
+NY,"Castleton Power, LLC",10190,NA,Facility name change from Transcanada Power Castleton on 01/15/2002
+NY,"Castleton Power, LLC",10190,NA,Facility name change from Castleton on 10/06/2005
+ID,Evander Andrews Power Complex,7953,NA,Facility name change from Mountain Home Generation Station on 05/02/2006
+MN,Taconite Harbor Energy Center,10075,NA,Facility name change from Rainy River Energy Corporation on 07/15/2002
+FL,Reedy Creek,7254,NA,Facility name change from Combined Cycle 1 on 02/11/2002
+AR,Harry D. Mattison Power Plant,56328,NA,Facility name change from Tontitown Power Station on 03/06/2007
+NJ,Newark Power Plant,50797,NA,Facility name change from Obrien (Newark) Cogeneration on 02/12/2004
+TX,"Ennis Power Company, LLC",55223,NA,"Facility name change from Wise County Power Company, Llc on 12/13/2001"
+TX,Johnson County Generation Facility,54817,NA,Facility name change from Cleburne Cogeneration Facility on 01/31/2006
+IN,Alcoa Allowance Management Inc,6705,NA,Facility name change from Warrick Power Plant on 11/21/2006
+IN,Alcoa Allowance Management Inc,6705,NA,"Facility name change from Alcoa Allowance Management, Inc. on 11/21/2006"
+IN,Alcoa Allowance Management Inc,6705,NA,Facility name change from Alcoa Warrick Power Plant on 03/20/2007
+IN,Alcoa Allowance Management Inc,6705,NA,Facility name change from Warrick on 10/17/2006
+VA,Louisa Generation Facility,7837,EU2,Unit ID change from 2 to EU2
+VA,Louisa Generation Facility,7837,2,Unit ID change from EU2 to 2
+VA,Louisa Generation Facility,7837,EU2,Unit ID change from 2 to EU2
+VA,Louisa Generation Facility,7837,EU1,Unit ID change from 1 to EU1
+VA,Louisa Generation Facility,7837,1,Unit ID change from EU1 to 1
+VA,Louisa Generation Facility,7837,EU1,Unit ID change from 1 to EU1
+CO,Rawhide Energy Station,6761,D,Unit ID change from Unit D to D
+MN,Blue Lake Generating Plant,8027,8,Unit ID change from 6 to 8
+MN,Blue Lake Generating Plant,8027,7,Unit ID change from 5 to 7
+MN,Pleasant Valley Station,7843,13,Unit ID change from EU03 to 13
+MN,Pleasant Valley Station,7843,12,Unit ID change from EU02 to 12
+MN,Pleasant Valley Station,7843,11,Unit ID change from EU01 to 11
+FL,Brandy Branch,7846,3,Unit ID change from 003 to 3
+FL,Brandy Branch,7846,2,Unit ID change from 002 to 2
+FL,Brandy Branch,7846,1,Unit ID change from 001 to 1
+LA,Perryville Power Station,55620,1-Feb,Unit ID change from CT3 to 2-1
+LA,Perryville Power Station,55620,2-Jan,Unit ID change from CT2 to 1-2
+LA,Perryville Power Station,55620,1-Jan,Unit ID change from CT1 to 1-1
+PA,"Fairless Energy, LLC",55298,2B,Unit ID change from 4 to 2B
+PA,"Fairless Energy, LLC",55298,2A,Unit ID change from 3 to 2A
+PA,"Fairless Energy, LLC",55298,1B,Unit ID change from 2 to 1B
+PA,"Fairless Energy, LLC",55298,2,Unit ID change from CT2 to 2
+PA,"Fairless Energy, LLC",55298,1A,Unit ID change from 1 to 1A
+PA,"Fairless Energy, LLC",55298,1,Unit ID change from CT1 to 1
+FL,Lauderdale,613,GFL09,Unit ID change from GFL9 to GFL09
+FL,Lauderdale,613,GFL08,Unit ID change from GFL8 to GFL08
+FL,Lauderdale,613,GFL07,Unit ID change from GFL7 to GFL07
+FL,Lauderdale,613,GFL06,Unit ID change from GFL6 to GFL06
+FL,Lauderdale,613,GFL05,Unit ID change from GFL5 to GFL05
+FL,Lauderdale,613,GFL04,Unit ID change from GFL4 to GFL04
+FL,Lauderdale,613,GFL03,Unit ID change from GFL3 to GFL03
+FL,Lauderdale,613,GFL02,Unit ID change from GFL2 to GFL02
+FL,Lauderdale,613,GFL01,Unit ID change from GFL1 to GFL01
+FL,Port Everglades,617,GPE09,Unit ID change from GPE9 to GPE09
+FL,Port Everglades,617,GPE08,Unit ID change from GPE8 to GPE08
+FL,Port Everglades,617,GPE07,Unit ID change from GPE7 to GPE07
+FL,Port Everglades,617,GPE06,Unit ID change from GPE6 to GPE06
+FL,Port Everglades,617,GPE05,Unit ID change from GPE5 to GPE05
+FL,Port Everglades,617,GPE04,Unit ID change from GPE4 to GPE04
+FL,Port Everglades,617,GPE03,Unit ID change from GPE3 to GPE03
+FL,Port Everglades,617,GPE02,Unit ID change from GPE2 to GPE02
+FL,Port Everglades,617,GPE01,Unit ID change from GPE1 to GPE01
+CA,Goose Haven Energy Center,55627,UNIT1,Unit ID change from 1 to UNIT1
+LA,Teche Power Station,1400,4,Unit ID change from CT-01 to 4
+NH,Granite Ridge Energy,55170,2,Unit ID change from 2 to 0002
+NH,Granite Ridge Energy,55170,1,Unit ID change from 1 to 0001
+MN,Laskin Energy Center,1891,NA,Facility name change from Syl Laskin on 08/15/2005
+MN,Boswell Energy Center,1893,NA,Facility name change from Clay Boswell on 08/15/2005
+MN,Hibbard Energy Center,1897,NA,Facility name change from M L Hibbard on 08/15/2005
+NJ,Howard M Down,2434,NA,Facility name change from Howard M on 01/22/2004
+TX,New Gulf Power Facility,50137,NA,Facility name change from Newgulf on 11/01/2006
+IL,"Geneva Energy, LLC",55174,NA,Facility name change from New Heights Recovery & Power on 03/09/2006
+MO,Dogwood Energy Facility,55178,NA,Facility name change from MEP Pleasant Hill-Aries Power Proj on 02/11/2005
+CT,New Haven Harbor,6156,NA,Facility name change from Wisvest - New Haven Harbor on 01/07/2003
+UT,Hunter,6165,NA,Facility name change from Hunter (Emery) on 06/07/2006
+KY,John S. Cooper,1384,NA,Facility name change from Cooper on 08/15/2002
+KY,William C. Dale,1385,NA,Facility name change from Dale on 08/15/2002
+TX,"AES Western Power, LLC",3461,NA,Facility name change from Deepwater on 12/14/2005
+CA,CalPeak Power - Enterprise,55513,NA,Facility name change from Enterprise No. 7 - Cal Peak Power on 03/04/2002
+CA,Yuba City Energy Center,10349,NA,Facility name change from Greenleaf II Energy Center on 05/27/2003
+AR,Fulton,7825,NA,Facility name change from Ct1 on 12/13/2001
+AR,Fulton,7825,NA,Facility name change from CT1 on 02/11/2002
+NY,Bethpage Energy Center,50292,NA,"Facility name change from CPN Bethpage 3rd Turbine, Inc. on 02/23/2005"
+NY,Bethpage Energy Center,50292,NA,Facility name change from TBG Cogen on 10/31/2002
+OH,Omega JV2 Hamilton,7782,NA,Facility name change from Amp-ohio Hamilton on 12/13/2001
+WI,"Appleton Coated, LLC",55558,NA,Facility name change from Appleton Coated Locks Mill on 09/28/2006
+CA,Lambie Energy Center,55626,NA,Facility name change from Panda West Power II on 07/19/2002
+NY,"Syracuse, LLC",10621,NA,Facility name change from CH Resources - Syracuse on 07/15/2002
+NY,"Syracuse, LLC",10621,NA,"Facility name change from WPS Empire State, Inc-Syracuse on 09/28/2006"
+KY,Smith Generating Facility,54,NA,Facility name change from J K Smith on 03/04/2002
+LA,Plaquemine Cogen Facility,55419,NA,Facility name change from Placquemine Cogen Facility on 11/15/2006
+IL,Raccoon Creek Power Plant,55417,NA,Facility name change from MEP Flora Power on 04/13/2006
+DE,Warren F. Sam Beasley Pwr Station,7962,NA,Facility name change from Delaware Municipal Electric Corp on 07/15/2002
+CO,Frank Knutson Station,55505,NA,Facility name change from Brighton Generating Station on 05/20/2003
+CA,CalPeak Power - Panoche,55508,NA,Facility name change from Panoche No. 2 - Cal Peak Power on 03/04/2002
+CA,CalPeak Power - Border,55510,NA,Facility name change from Lonestar No. 4 - Cal Peak Power on 03/04/2002
+TX,Exelon Laporte Generating Station,55365,NA,Facility name change from Peco Laporte Peaking Facility on 12/13/2001
+PA,"Allegheny Energy Units 3, 4 & 5",55710,NA,Facility name change from Allegheny Energy on 09/26/2002
+ID,Bennett Mountain Power Project,55733,NA,Facility name change from Mountain Home Energy Project on 04/12/2004
+NC,Rockingham County Combustion Turbine,55116,NA,Facility name change from Rockingham Power on 11/27/2006
+GA,Walton County Power,55128,NA,Facility name change from LG&E Power Monroe on 04/23/2002
+CA,Mountainview Generating Station,358,NA,Facility name change from Mountainview (San Bernadino) on 07/15/2002
+PA,Mt. Carmel Cogeneration,10343,NA,Facility name change from Foster Wheeler Mt. Carmel on 01/07/2003
+MI,New Covert Generating Project,55297,NA,Facility name change from Covert Generating Project on 11/12/2004
+OH,Waterford Plant,55503,NA,Facility name change from PSEG Waterford Energy Facility on 12/13/2001
+NC,"Edgecombe Genco, LLC",10384,NA,Facility name change from Cogentrix-Rocky Mount on 03/21/2006
+MO,South Harper Peaking Facility,56151,NA,Facility name change from Camp Branch Energy Center on 01/07/2005
+NY,Caithness Long Island Energy Center,56234,NA,Facility name change from Caithness Bellport Energy Center on 10/25/2005
+NV,Walter M. Higgins III Generating Station,55687,NA,Facility name change from Bighorn Electric Generating Station on 01/08/2004
+NC,NCEMC Anson Plant,56249,NA,Facility name change from Anson County Generation on 03/20/2006
+TX,Calpine Hidalgo Energy Center,7762,NA,Facility name change from Hidalgo Energy Facility on 06/22/2005
+AZ,Gila River Power Station,55306,NA,Facility name change from Panda Gila River on 09/04/2003
+AZ,Gila River Power Station,55306,NA,"Facility name change from Panda Gila River, LP on 04/25/2002"
+AZ,Gila River Power Station,55306,NA,"Facility name change from Panda Gila River, LP on 12/13/2001"
+AZ,"New Harquahala Generating Company, LLC",55372,NA,Facility name change from Harquahala Generating Project on 03/24/2005
+ME,Bucksport Generation LLC,50243,NA,Facility ID (ORISPL) change from 55180 to 50243
+MS,Kemper County,7960,NA,Facility ID (ORISPL) change from 7923 to 7960
+DE,NRG Energy Center Dover,10030,NA,Facility ID (ORISPL) change from 880002 to 10030
+NY,Astoria Gas Turbine Power,55243,NA,Facility ID (ORISPL) change from 8906 to 55243
+NY,Pouch Terminal,8053,NA,Facility ID (ORISPL) change from 7911 to 8053
+CA,"Delta Energy Center, LLC",55333,NA,Facility ID (ORISPL) change from 54001 to 55333
+IL,Rockford II Energy Center,55936,NA,Facility ID (ORISPL) change from 55461 to 55936
+MS,"Caledonia Power I, LLC",55082,NA,Facility ID (ORISPL) change from 2783 to 55082
+WI,Sheboygan Falls Energy Facility,56166,NA,Facility ID (ORISPL) change from 56186 to 56166
+CO,Brush Power Projects,10682,NA,Facility ID (ORISPL) change from 55209 to 10682
+LA,Perryville Power Station,55620,NA,Facility ID (ORISPL) change from 7864 to 55620
+TN,Brownsville CT,55081,NA,Facility ID (ORISPL) change from 2387 to 55081
+UT,Desert Power Plant,55858,NA,Facility ID (ORISPL) change from 55848 to 55858
+AL,Plant H. Allen Franklin,7710,NA,Facility ID (ORISPL) change from 7840 to 7710
+CA,Donald Von Raesfeld,56026,NA,Facility ID (ORISPL) change from 8058 to 56026
+TX,Baytown Energy Center,55327,NA,Facility ID (ORISPL) change from 55195 to 55327
+MN,Lakefield Junction Generating,7925,NA,Facility ID (ORISPL) change from 55140 to 7925
+KS,Chanute 2,1268,NA,Facility ID (ORISPL) change from 3355 to 1268
+SC,Jasper County Generating Facility,55927,NA,Facility ID (ORISPL) change from 7996 to 55927
+TX,Sand Hill Energy Center,7900,NA,Facility ID (ORISPL) change from 1700 to 7900
+NC,"Edgecombe Genco, LLC",10384,NA,Facility ID (ORISPL) change from 50468 to 10384
+NV,Chuck Lenzie Generating Station,55322,CTG-4,Unit ID change from CTG4 to CTG-4
+NV,Chuck Lenzie Generating Station,55322,CTG-3,Unit ID change from CTG3 to CTG-3
+NV,Chuck Lenzie Generating Station,55322,CTG-2,Unit ID change from CTG2 to CTG-2
+NV,Chuck Lenzie Generating Station,55322,CTG-1,Unit ID change from CTG1 to CTG-1
+FL,Northside,667,GT6,Unit ID change from 6 to GT6
+FL,Northside,667,GT5,Unit ID change from 5 to GT5
+FL,Northside,667,GT4,Unit ID change from 4 to GT4
+CA,El Segundo,330,7,Unit ID change from 6 to 7
+MS,Ackerman Combined Cycle,55694,AA-002,Unit ID change from CT-2 to AA-002
+MS,Ackerman Combined Cycle,55694,AA-001,Unit ID change from CT-1 to AA-001
+FL,"Quantum Pasco Power, LP",54424,EU002,Unit ID change from 002 to EU002
+FL,"Quantum Pasco Power, LP",54424,EU001,Unit ID change from 001 to EU001
+TX,"AES Deepwater, Inc.",10670,1001,Unit ID change from 1001 to 01001
+WI,West Campus Cogeneration Facility,7991,U2,Unit ID change from B02 to U2
+WI,West Campus Cogeneration Facility,7991,U1,Unit ID change from B01 to U1
+AZ,Santan,8068,6A,Unit ID change from 6 to 6A
+IL,Aurora,55279,AGS09,Unit ID change from AGS9 to AGS09
+IL,Aurora,55279,AGS08,Unit ID change from AGS8 to AGS08
+IL,Aurora,55279,AGS07,Unit ID change from AGS7 to AGS07
+IL,Aurora,55279,AGS06,Unit ID change from AGS6 to AGS06
+IL,Aurora,55279,AGS05,Unit ID change from AGS5 to AGS05
+IL,Aurora,55279,AGS04,Unit ID change from AGS4 to AGS04
+IL,Aurora,55279,AGS03,Unit ID change from AGS3 to AGS03
+IL,Aurora,55279,AGS02,Unit ID change from AGS2 to AGS02
+IL,Aurora,55279,AGS01,Unit ID change from AGS1 to AGS01
+CA,Carson Cogeneration Company,10169,D1,Unit ID change from 1 to D1
+NY,Empire Generating Company LLC,56259,CT-2,Unit ID change from 2 to CT-2
+NY,Empire Generating Company LLC,56259,CT-1,Unit ID change from 1 to CT-1
+NY,Astoria Generating Station,8906,42RH,Unit ID change from 41SH to 42RH
+NY,Astoria Generating Station,8906,32SH,Unit ID change from 31RH to 32SH
+FL,Santa Rosa Energy Center,55242,CT-1,Unit ID change from COG01 to CT-1
+PA,"Armstrong Power, LLC",55347,4,Unit ID change from UNIT4 to 4
+PA,"Armstrong Power, LLC",55347,UNIT4,Unit ID change from 0UNIT4 to UNIT4
+PA,"Armstrong Power, LLC",55347,3,Unit ID change from UNIT3 to 3
+PA,"Armstrong Power, LLC",55347,UNIT3,Unit ID change from 0UNIT3 to UNIT3
+PA,"Armstrong Power, LLC",55347,2,Unit ID change from UNIT2 to 2
+PA,"Armstrong Power, LLC",55347,UNIT2,Unit ID change from 0UNIT2 to UNIT2
+PA,"Armstrong Power, LLC",55347,1,Unit ID change from UNIT1 to 1
+PA,"Armstrong Power, LLC",55347,UNIT1,Unit ID change from 0UNIT1 to UNIT1
+OH,"Troy Energy, LLC",55348,4,Unit ID change from UNIT4 to 4
+OH,"Troy Energy, LLC",55348,UNIT4,Unit ID change from 0UNIT4 to UNIT4
+OH,"Troy Energy, LLC",55348,3,Unit ID change from UNIT3 to 3
+OH,"Troy Energy, LLC",55348,UNIT3,Unit ID change from 0UNIT3 to UNIT3
+OH,"Troy Energy, LLC",55348,2,Unit ID change from UNIT2 to 2
+OH,"Troy Energy, LLC",55348,UNIT2,Unit ID change from 0UNIT2 to UNIT2
+OH,"Troy Energy, LLC",55348,1,Unit ID change from UNIT1 to 1
+OH,"Troy Energy, LLC",55348,UNIT1,Unit ID change from 0UNIT1 to UNIT1
+WV,"Pleasants Energy, LLC",55349,2,Unit ID change from TURB2 to 2
+WV,"Pleasants Energy, LLC",55349,1,Unit ID change from TURB1 to 1
+IN,Sugar Creek Generating Station,55364,CT22,Unit ID change from 00CT22 to CT22
+IN,Sugar Creek Generating Station,55364,CT21,Unit ID change from 00CT21 to CT21
+IN,Sugar Creek Generating Station,55364,CT12,Unit ID change from 00CT12 to CT12
+IN,Sugar Creek Generating Station,55364,CT11,Unit ID change from 00CT11 to CT11
+IL,Rockford II Energy Center,55936,U1,Unit ID change from 001 to U1
+CA,Chula Vista Energy Center,55540,1B,Unit ID change from CT1B to 1B
+CA,Chula Vista Energy Center,55540,1A,Unit ID change from CT1A to 1A
+NE,Beatrice,8000,2,Unit ID change from CT2 to 2
+NE,Beatrice,8000,1,Unit ID change from CT1 to 1
+MN,Benson Power Biomass Plant,55867,BLR-1,Unit ID change from EU-001 to BLR-1
+AR,Oswald Generating Station,55221,G7,Unit ID change from SN7 to G7
+AR,Oswald Generating Station,55221,G6,Unit ID change from SN6 to G6
+AR,Oswald Generating Station,55221,G5,Unit ID change from SN5 to G5
+AR,Oswald Generating Station,55221,G4,Unit ID change from SN4 to G4
+AR,Oswald Generating Station,55221,G3,Unit ID change from SN3 to G3
+AR,Oswald Generating Station,55221,G2,Unit ID change from SN2 to G2
+AR,Oswald Generating Station,55221,G1,Unit ID change from SN1 to G1
+TX,South Houston Green Power Site,55470,EPN803,Unit ID change from COGTR3 to EPN803
+TX,South Houston Green Power Site,55470,EPN802,Unit ID change from COGTR2 to EPN802
+TX,South Houston Green Power Site,55470,EPN801,Unit ID change from COGTR1 to EPN801
+CA,Mariposa Energy Project,57483,GT-4,Unit ID change from GT-7 to GT-4
+TX,Nacogdoches Power LLC,55708,CT1,Unit ID change from HRSG-2 to CT1
+TX,Nacogdoches Power LLC,55708,BFB-1,Unit ID change from BLR1 to BFB-1
+TX,Nacogdoches Power LLC,55708,BLR1,Unit ID change from HRSG-1 to BLR1
+PA,"Marcus Hook Energy, LP",55801,AB04,Unit ID change from 0007 to AB04
+PA,"Marcus Hook Energy, LP",55801,AB03,Unit ID change from 0006 to AB03
+PA,"Marcus Hook Energy, LP",55801,AB02,Unit ID change from 0005 to AB02
+PA,"Marcus Hook Energy, LP",55801,AB01,Unit ID change from 0004 to AB01
+FL,Martin,6043,PMR8D,Unit ID change from MRCT8B to PMR8D
+FL,Martin,6043,PMR8C,Unit ID change from MRCT8A to PMR8C
+MO,Iatan,6065,2,Unit ID change from **2 to 2
+MS,Crossroads Energy Center (CPU),55395,CT04,Unit ID change from CT-04 to CT04
+MS,Crossroads Energy Center (CPU),55395,CT03,Unit ID change from CT-03 to CT03
+MS,Crossroads Energy Center (CPU),55395,CT02,Unit ID change from CT-02 to CT02
+MS,Crossroads Energy Center (CPU),55395,CT01,Unit ID change from CT-01 to CT01
+WI,Rock River,4057,CT3,Unit ID change from 3 to CT3
+OH,Edgewater (2857),2857,B,Unit ID change from CTB to B
+OH,Edgewater (2857),2857,A,Unit ID change from CTA to A
+NC,Richmond County Plant,7805,10,Unit ID change from 14 to 10
+NC,Richmond County Plant,7805,9,Unit ID change from 13 to 9
+IA,Pella,1175,EP2,Unit ID change from EP#2 to EP2
+IA,Pella,1175,EP1,Unit ID change from EP#1 to EP1
+MA,Fore River Energy Center,55317,12,Unit ID change from 02 to 12
+MA,Fore River Energy Center,55317,11,Unit ID change from 01 to 11
+NY,"Hawkeye Energy Greenport, LLC",55969,U-01,Unit ID change from TURB1 to U-01
+NJ,Linden Generating Station,2406,2201,Unit ID change from 202 to 2201
+NJ,Linden Generating Station,2406,2101,Unit ID change from 201 to 2101
+NJ,Linden Generating Station,2406,1201,Unit ID change from 102 to 1201
+NJ,Linden Generating Station,2406,1101,Unit ID change from 101 to 1101
+VA,Louisa Generation Facility,7837,EU5,Unit ID change from 5 to EU5
+VA,Louisa Generation Facility,7837,EU4,Unit ID change from 4 to EU4
+VA,Louisa Generation Facility,7837,EU3,Unit ID change from 3 to EU3
+WI,"DTE Stoneman, LLC",4146,NA,Facility name change from Stoneman on 09/28/2006
+TX,Channelview Cogeneration Facility,55187,NA,Facility name change from Channelview Cogeneration on 07/15/2002
+AZ,Arlington Valley Energy Facility,55282,NA,Facility name change from Duke Energy Arlington Valley on 06/05/2006
+NY,Richard M Flynn (Holtsville),7314,NA,Facility name change from Richard M Flynn on 01/15/2002
+PA,Hunlock Unit 4,56397,NA,Facility name change from Hunlock Unit 4 on 06/21/2006
+NV,Chuck Lenzie Generating Station,55322,NA,Facility name change from Moapa Energy Facility on 11/29/2004
+NV,Chuck Lenzie Generating Station,55322,NA,Facility name change from Moapa Energy Facility on 02/11/2002
+VA,"Spruance Genco, LLC",54081,NA,Facility name change from Cogentrix of Richmond on 03/21/2006
+CA,Etiwanda Generating Station,331,NA,Facility name change from Mountain Vista (Etiwanda) on 07/19/2002
+CA,Riverside Canal Power Company,334,NA,Facility name change from Riverside Canal (Highgrove) on 07/15/2002
+CA,Mandalay Generating Station,345,NA,Facility name change from Ocean Vista (Mandalay) on 07/19/2002
+CA,Magnolia (OLD),375,NA,Facility name change from Magnolia 4 on 01/25/2007
+GA,Chattahoochee Energy Facility,7917,NA,Facility name change from Heard Energy Facility on 03/07/2003
+KS,Osawatomie Generating Station,7928,NA,Facility name change from Paola Peaking Station on 07/08/2003
+MS,Watson Electric Generating Plant,2049,NA,Facility name change from Jack Watson on 12/13/2001
+OK,Tenaska Kiamichi Generating Station,55501,NA,Facility name change from Kiamichi Energy Facility on 08/12/2003
+TN,"Valero Refining Company-Tennessee, LLC",55703,NA,"Facility name change from Williams Refining & Marketing, LLC on 04/23/2003"
+IN,State Line Generating Station (IN),981,NA,Facility name change from Mirant State Line Energy (IN) on 07/19/2002
+IN,IPL - Harding Street Station (EW Stout),990,NA,Facility name change from Elmer W Stout on 12/13/2001
+OH,AMP-Ohio Gas Turbines Bowling Green,55262,NA,Facility name change from PG&E Bowling Green on 09/22/2003
+GA,Thomas A. Smith Energy Facility,55382,NA,Facility name change from Duke Energy Murray on 10/31/2002
+TX,Sam Rayburn Plant,3631,NA,Facility name change from South Texas Electric Cooperative on 04/07/2004
+PA,"WPS Westwood Generation, LLC",50611,NA,Facility name change from Westwood on 09/28/2006
+TX,ExxonMobil Beaumont Refinery,50625,NA,Facility name change from Mobil Beaumont Refinery on 02/21/2003
+OH,AMP-Ohio Gas Turbines Napoleon,55264,NA,Facility name change from PG&E Napoleon on 09/22/2003
+IL,Rockford II Energy Center,55936,NA,Facility name change from Indeck-Rockford II Energy Center on 02/06/2003
+NC,Rosemary Power Station,50555,NA,Facility name change from Panda Rosemary on 02/24/2005
+VA,Elizabeth River Combustion Turbine Sta,52087,NA,Facility name change from Commonwealth Atlantic LP (Calp) on 12/02/2004
+MI,Zeeland Generating Station,55087,NA,Facility name change from Michigan Power Project on 12/13/2001
+IL,"Dynegy Lee II, LLC",55236,NA,"Facility name change from Duke Energy Lee, LLC on 02/11/2002"
+IL,"Dynegy Lee II, LLC",55236,NA,Facility name change from Lee County Generating Station on 12/13/2001
+IL,"Dynegy Lee II, LLC",55236,NA,Facility name change from Duke Energy Lee on 03/13/2003
+OH,AMP-Ohio Gas Turbines Galion ,55263,NA,Facility name change from Galion Generating Station on 09/22/2003
+CA,CalPeak Power - Vaca Dixon,55499,NA,Facility name change from Vaca-Dixon No. 1- Cal Peak Power on 03/04/2002
+MA,"Tanner Street Generation, LLC",54586,NA,Facility name change from UAE Lowell Power LLC on 01/15/2002
+MA,"Tanner Street Generation, LLC",54586,NA,"Facility name change from LPG Associates, LLC on 10/03/2006"
+MA,"Tanner Street Generation, LLC",54586,NA,"Facility name change from Lowell Power, LLC on 10/03/2006"
+TX,South Houston Green Power Site,55470,NA,Facility name change from Green Power on 10/01/2003
+IN,IPL - Eagle Valley Generating Station,991,NA,Facility name change from Eagle Valley (H T Pritchard) on 01/04/2005
+IN,IPL - Eagle Valley Generating Station,991,NA,Facility name change from H T Pritchard on 12/13/2001
+TX,Sweetwater Generating Plant,50615,NA,Facility name change from Encogen One on 07/15/2002
+OH,"Dynegy Washington II, LLC",55397,NA,"Facility name change from Duke Energy Washington, LLC on 04/23/2003"
+MS,BTEC New Albany LLC,13213,NA,Facility name change from KGen New Albany LLC on 10/04/2006
+AL,E B Harris Generating Plant,7897,NA,Facility name change from Autaugaville Cc on 12/17/2001
+AL,E B Harris Generating Plant,7897,NA,Facility name change from Autaugaville CC on 07/27/2002
+TX,H W Pirkey Power Plant,7902,NA,Facility name change from Pirkey on 09/26/2002
+IN,Hoosier Energy Lawrence Co Station,7948,NA,Facility name change from Hoosier Energy Bedford Station on 01/07/2003
+PA,Chambersburg Units 12 & 13,55654,NA,Facility name change from Allegheny Energy Chambersburg on 12/13/2001
+CA,Goose Haven Energy Center,55627,NA,Facility name change from Panda West Power III on 07/19/2002
+PA,North East Cogeneration Plant,54571,NA,Facility name change from Nepa Energy Lp on 12/13/2001
+CT,South Meadow Station,563,NA,Facility name change from Mid-Conn/S. Meadow on 01/15/2002
+NM,Luna Energy Facility,55343,NA,Facility name change from Deming Energy Facility on 10/04/2005
+MS,Hinds Energy Facility,55218,NA,"Facility name change from KGen Hinds, LLC on 10/25/2004"
+MS,Hinds Energy Facility,55218,NA,Facility name change from Duke Energy Hinds on 10/25/2004
+MS,Hinds Energy Facility,55218,NA,"Facility name change from Duke Energy Hinds, LLC on 02/11/2002"
+MS,Hinds Energy Facility,55218,NA,"Facility name change from Duke Energy Hinds, Llc on 12/13/2001"
+KY,Marshall,55232,NA,"Facility name change from Duke Energy Marshall County,  LLC on 10/25/2004"
+KY,Marshall,55232,NA,Facility name change from Duke Energy Marshall on 07/15/2002
+KY,Marshall,55232,NA,Facility name change from Marshall County Generating Station on 02/11/2002
+KY,Marshall,55232,NA,Facility name change from Duke Energy Marshall LLC on 04/15/2003
+IL,Shelby County,55237,NA,Facility name change from Shelby Energy Center on 07/15/2002
+IL,Rockford Energy Center,55238,NA,Facility name change from Indeck Rockford Energy Center on 02/06/2003
+IL,Rockford Energy Center,55238,NA,Facility name change from Indeck-Rockford Energy Center on 07/19/2002
+CA,Cuyamaca Peak Energy,55512,NA,Facility name change from El Cajon No. 6 - Cal Peak Power on 03/04/2002
+TX,Mustang Station (56326),56326,NA,Facility name change from Mustang Station Unit 4 on 11/20/2006
+NC,NCEMC Hamlet Plant,56292,NA,Facility name change from Richmond County Generation Facility on 03/20/2006
+CA,Creed Energy Center,55625,NA,Facility name change from Panda West Power I on 07/19/2002
+TX,San Jacinto County Peaking Facility,56603,SJCCT1,"San Jacinto County Peaking Facility (ORISPL 56603) Unit SJCCT1 in Texas was previously Warren Peaking Power Facility (ORISPL 55303) Unit AA-002 in Mississippi, and started submitting emissions at the new location in Q2 2009"
+TX,San Jacinto County Peaking Facility,56603,SJCCT2,"San Jacinto County Peaking Facility (ORISPL 56603) Unit SJCCT2 in Texas was previously Warren Peaking Power Facility (ORISPL 55303) Unit AA-003 in Mississippi, and started submitting emissions at the new location in Q1 2009"
+TX,Hardin County Peaking Facility,56604,HCCT1,"Hardin County Peaking Facility (ORISPL 56604) Unit HCCT1 in Texas was previously Warren Peaking Power Facility (ORISPL 55303) Unit AA-001 in Mississippi, and started submitting emissions at the new location in Q2 2009"
+TX,Hardin County Peaking Facility,56604,HCCT2,"Hardin County Peaking Facility (ORISPL 56604) Unit HCCT2 in Texas was previously Warren Peaking Power Facility (ORISPL 55303) Unit AA-004 in Mississippi, and started submitting emissions at the new location in Q1 2009"
+TX,Quail Run Energy Center,56349,CT2A,"Quail Run Energy Center (ORISPL 56349) Unit CT2A in Texas was previously KGen Enterprise Facility (ORISPL 55373) Unit CT3 in Mississippi, and started submitting emissions at the new location in Q2 2008"
+TX,Quail Run Energy Center,56349,CT2B,"Quail Run Energy Center (ORISPL 56349) Unit CT2B in Texas was previously KGen Enterprise Facility (ORISPL 55373) Unit CT4 in Mississippi, and started submitting emissions at the new location in Q2 2008"
+TX,Newman,3456,GT-6A,"Newman (ORISPL 3456) Unit GT-6A in Texas was previously KGen Enterprise Facility (ORISPL 55373) Unit CT7 in Mississippi, and started submitting emissions at the new location in Q2 2009"
+TX,Newman,3456,GT-6B,"Newman (ORISPL 3456) Unit GT-6B in Texas was previously KGen Enterprise Facility (ORISPL 55373) Unit CT8 in Mississippi, and started submitting emissions at the new location in Q2 2009"
+TX,Colorado Bend Energy Center,56350,CT1A,"Colorado Bend Energy Center (ORISPL 56350) Unit CT1A in Texas was previously KGen Enterprise Facility (ORISPL 55373) Unit CT1 in Mississippi, and started submitting emissions at the new location in Q2 2007"
+TX,Colorado Bend Energy Center,56350,CT1B,"Colorado Bend Energy Center (ORISPL 56350) Unit CT1B in Texas was previously KGen Enterprise Facility (ORISPL 55373) Unit CT2 in Mississippi, and started submitting emissions at the new location in Q2 2007"
+TX,Colorado Bend Energy Center,56350,CT2A,"Colorado Bend Energy Center (ORISPL 56350) Unit CT2A in Texas was previously KGen Enterprise Facility (ORISPL 55373) Unit CT5 in Mississippi, and started submitting emissions at the new location in Q3 2008"
+TX,Colorado Bend Energy Center,56350,CT2B,"Colorado Bend Energy Center (ORISPL 56350) Unit CT2B in Texas was previously KGen Enterprise Facility (ORISPL 55373) Unit CT6 in Mississippi, and started submitting emissions at the new location in Q3 2008"
+TX,Bacliff Generating Station,60264,BCGT1,"Bacliff Generating Station (ORISPL 60264) Unit BCGT1 in Texas was previously BTEC New Albany LLC (ORISPL 13213) Unit AA-001 in Mississippi, and started submitting emissions at the new location in Q1 2015"
+TX,Bacliff Generating Station,60264,BCGT2,"Bacliff Generating Station (ORISPL 60264) Unit BCGT2 in Texas was previously BTEC New Albany LLC (ORISPL 13213) Unit AA-002 in Mississippi, and started submitting emissions at the new location in Q1 2015"
+TX,Bacliff Generating Station,60264,BCGT3,"Bacliff Generating Station (ORISPL 60264) Unit BCGT3 in Texas was previously BTEC New Albany LLC (ORISPL 13213) Unit AA-003 in Mississippi, and started submitting emissions at the new location in Q1 2015"
+TX,Bacliff Generating Station,60264,BCGT4,"Bacliff Generating Station (ORISPL 60264) Unit BCGT4 in Texas was previously BTEC New Albany LLC (ORISPL 13213) Unit AA-004 in Mississippi, and started submitting emissions at the new location in Q1 2015"
+TX,Bacliff Generating Station,60264,BCGT5,"Bacliff Generating Station (ORISPL 60264) Unit BCGT5 in Texas was previously BTEC New Albany LLC (ORISPL 13213) Unit AA-005 in Mississippi, and started submitting emissions at the new location in Q1 2015"
+TX,Bacliff Generating Station,60264,BCGT6,"Bacliff Generating Station (ORISPL 60264) Unit BCGT6 in Texas was previously BTEC New Albany LLC (ORISPL 13213) Unit AA-006 in Mississippi, and started submitting emissions at the new location in Q1 2015"
+AR,Harry D. Mattison Power Plant,56328,3,"Harry D. Mattison Power Plant (ORISPL 56328) Unit 3 in Arkansas was previously Caledonia Power I, LLC (ORISPL 55082) Unit AA-001 in Mississippi, and started submitting emissions at the new location in Q3 2007"
+AR,Harry D. Mattison Power Plant,56328,4,"Harry D. Mattison Power Plant (ORISPL 56328) Unit 4 in Arkansas was previously Caledonia Power I, LLC (ORISPL 55082) Unit AA-002 in Mississippi, and started submitting emissions at the new location in Q3 2007"
+OK,Southwestern,2964,8004,"Southwestern (ORISPL 2964) Unit 8004 in Oklahoma was previously Caledonia Power I, LLC (ORISPL 55082) Unit AA-005 in Mississippi, and started submitting emissions at the new location in Q1 2008"
+OK,Southwestern,2964,8005,"Southwestern (ORISPL 2964) Unit 8005 in Oklahoma was previously Caledonia Power I, LLC (ORISPL 55082) Unit AA-006 in Mississippi, and started submitting emissions at the new location in Q1 2008"
+OK,Riverside (4940),4940,1503,"Riverside (ORISPL 4940) Unit 1503 in Oklahoma was previously Caledonia Power I, LLC (ORISPL 55082) Unit AA-003 in Mississippi, and started submitting emissions at the new location in Q1 2008"
+OK,Riverside (4940),4940,1504,"Riverside (ORISPL 4940) Unit 1504 in Oklahoma was previously Caledonia Power I, LLC (ORISPL 55082) Unit AA-004 in Mississippi, and started submitting emissions at the new location in Q1 2008"
+LA,Waterford 1 & 2,8056,4,"Waterford 1 & 2 (ORISPL 8056) Unit 4 in Louisiana was previously South Glens Falls Energy (ORISPL 10618) Unit 1 in New York, and started submitting emissions at the new location in Q3 2009"
+NY,Ravenswood Steam Plant,880100,BLR001,"Ravenswood Steam Plant (ORISPL 880100) Unit BLR001 in New York was previously Ravenswood Generating Station (ORISPL 2500) Unit BLR001 in New York, and started submitting emissions at the new location in Q1 2010"
+NY,Ravenswood Steam Plant,880100,BLR002,"Ravenswood Steam Plant (ORISPL 880100) Unit BLR002 in New York was previously Ravenswood Generating Station (ORISPL 2500) Unit BLR002 in New York, and started submitting emissions at the new location in Q1 2010"
+NY,Ravenswood Steam Plant,880100,BLR003,"Ravenswood Steam Plant (ORISPL 880100) Unit BLR003 in New York was previously Ravenswood Generating Station (ORISPL 2500) Unit BLR003 in New York, and started submitting emissions at the new location in Q1 2010"
+NY,Ravenswood Steam Plant,880100,BLR004,"Ravenswood Steam Plant (ORISPL 880100) Unit BLR004 in New York was previously Ravenswood Generating Station (ORISPL 2500) Unit BLR004 in New York, and started submitting emissions at the new location in Q1 2010"
+PA,Hunlock Unit 4,56397,4,"Hunlock (ORISPL 56397) Unit 4 in Pennsylvania was previously Hunlock Creek Energy Center (ORISPL 3176) Unit 4 in Pennsylvania, and started submitting emissions at the new location in Q1 2006"
+PA,SPMT Marcus Hook Industrial Complex,880107,AB01,"SPMT Marcus Hook Industrial Complex (ORISPL 880107) Unit AB01 in Pennsylvania was previously Marcus Hook Energy, LP (ORISPL 55801) Unit AB01 in Pennsylvania, and started submitting emissions at the new location in Q4 2016"
+PA,SPMT Marcus Hook Industrial Complex,880107,AB02,"SPMT Marcus Hook Industrial Complex (ORISPL 880107) Unit AB02 in Pennsylvania was previously Marcus Hook Energy, LP (ORISPL 55801) Unit AB02 in Pennsylvania, and started submitting emissions at the new location in Q4 2016"
+PA,SPMT Marcus Hook Industrial Complex,880107,AB03,"SPMT Marcus Hook Industrial Complex (ORISPL 880107) Unit AB03 in Pennsylvania was previously Marcus Hook Energy, LP (ORISPL 55801) Unit AB03 in Pennsylvania, and started submitting emissions at the new location in Q4 2016"
+PA,SPMT Marcus Hook Industrial Complex,880107,AB04,"SPMT Marcus Hook Industrial Complex (ORISPL 880107) Unit AB04 in Pennsylvania was previously Marcus Hook Energy, LP (ORISPL 55801) Unit AB04 in Pennsylvania, and started submitting emissions at the new location in Q4 2016"
+TX,Carbon Capture Plant,58378,CTHRSG,"Carbon Capture Plant (ORISPL 58378) Unit CTHRSG in Texas was previously W A Parish (ORISPL 3470) Unit CTSC in Texas, and started submitting emissions at the new location in Q1 2017"
+WY,Neil Simpson II (CT2),55477,CT2,"Neil Simpson II (ORISPL 55477) Unit CT2 in Wyoming was previously Neil Simpson II (ORISPL 7504) Unit CT2 in Wyoming, and started submitting emissions at the new location in Q3 2001"
+OR,Port Westward,56227,PWEU1,Unit ID change from PW1 to PWEU1
+VA,Panda Stonewall Power Project,59004,CT2,Unit ID change from GEN2 to CT2
+VA,Panda Stonewall Power Project,59004,CT1,Unit ID change from GEN1 to CT1
+IN,Wheatland Generating Facility LLC,55224,EU-04,Unit ID change from CTG-4 to EU-04
+IN,Wheatland Generating Facility LLC,55224,EU-03,Unit ID change from CTG-3 to EU-03
+IN,Wheatland Generating Facility LLC,55224,EU-02,Unit ID change from CTG-2 to EU-02
+IN,Wheatland Generating Facility LLC,55224,EU-01,Unit ID change from CTG-1 to EU-01
+LA,Brame Energy Center,6190,1-Mar,Unit ID change from 3 to 3-1
+OH,West Lorain,2869,1B,Unit ID change from CT1B to 1B
+OH,West Lorain,2869,1A,Unit ID change from CT1A to 1A
+MO,Lake Road,2098,GT5,Unit ID change from GT 5 to GT5
+TX,Cottonwood Energy Project,55358,CT4,Unit ID change from 000CT4 to CT4
+TX,Cottonwood Energy Project,55358,CT3,Unit ID change from 000CT3 to CT3
+TX,Cottonwood Energy Project,55358,CT2,Unit ID change from 000CT2 to CT2
+TX,Cottonwood Energy Project,55358,CT1,Unit ID change from 000CT1 to CT1
+CO,Spindle Hill Energy Center,56445,CT-02,Unit ID change from 2 to CT-02
+CO,Spindle Hill Energy Center,56445,CT-01,Unit ID change from 1 to CT-01
+WI,Germantown Power Plant,6253,P33,Unit ID change from 4 to P33
+WI,Germantown Power Plant,6253,P32,Unit ID change from 3 to P32
+WI,Germantown Power Plant,6253,P31,Unit ID change from 2 to P31
+WI,Germantown Power Plant,6253,P30,Unit ID change from 1 to P30
+MN,Faribault Energy Park,56164,EU006,Unit ID change from 06 to EU006
+CA,Creed Energy Center,55625,UNIT1,Unit ID change from 1 to UNIT1
+NC,Craven County Wood Energy,10525,ES5A,Unit ID change from 4A to ES5A
+MO,John Twitty Energy Center,6195,CT2B,Unit ID change from GT2B to CT2B
+MO,John Twitty Energy Center,6195,CT2A,Unit ID change from GT2A to CT2A
+MO,John Twitty Energy Center,6195,CT1B,Unit ID change from GT1B to CT1B
+MO,John Twitty Energy Center,6195,CT1A,Unit ID change from GT1A to CT1A
+CO,Pueblo Airport Generating Station,56998,CT07,Unit ID change from CT5B to CT07
+CO,Pueblo Airport Generating Station,56998,CT06,Unit ID change from CT5A to CT06
+CO,Pueblo Airport Generating Station,56998,CT05,Unit ID change from CT4B to CT05
+CO,Pueblo Airport Generating Station,56998,CT04,Unit ID change from CT4A to CT04
+CO,Pueblo Airport Generating Station,56998,CT4A,Unit ID change from CT4 to CT4A
+CO,Pueblo Airport Generating Station,56998,CT03,Unit ID change from CT3 to CT03
+CO,Pueblo Airport Generating Station,56998,CT02,Unit ID change from CT2 to CT02
+CO,Pueblo Airport Generating Station,56998,CT01,Unit ID change from CT1 to CT01
+AR,Magnet Cove Generating Station,55714,SN-02,Unit ID change from GT-2 to SN-02
+AR,Magnet Cove Generating Station,55714,SN-01,Unit ID change from GT-1 to SN-01
+IL,Kendall Energy Facility,55131,GTG-4,Unit ID change from 4 to GTG-4
+IL,Kendall Energy Facility,55131,GTG-3,Unit ID change from 3 to GTG-3
+IL,Kendall Energy Facility,55131,GTG-2,Unit ID change from 2 to GTG-2
+IL,Kendall Energy Facility,55131,GTG-1,Unit ID change from 1 to GTG-1
+MT,Hardin Generating Station,55749,U1,Unit ID change from 1 to U1
+TX,Sam Bertron,3468,SRBG1,Unit ID change from GT1 to SRBG1
+NE,Rokeby,6373,BS1,Unit ID change from 000BS1 to BS1
+FL,Oleander Power Project,55286,O-5,Unit ID change from OG-5 to O-5
+FL,Oleander Power Project,55286,OG-5,Unit ID change from O-5 to OG-5
+FL,Oleander Power Project,55286,O-4,Unit ID change from OG-4 to O-4
+FL,Oleander Power Project,55286,OG-4,Unit ID change from O-4 to OG-4
+FL,Oleander Power Project,55286,O-3,Unit ID change from OG-3 to O-3
+FL,Oleander Power Project,55286,OG-3,Unit ID change from O-3 to OG-3
+FL,Oleander Power Project,55286,O-2,Unit ID change from OG-2 to O-2
+FL,Oleander Power Project,55286,OG-2,Unit ID change from O-2 to OG-2
+FL,Oleander Power Project,55286,O-1,Unit ID change from OG-1 to O-1
+FL,Oleander Power Project,55286,OG-1,Unit ID change from O-1 to OG-1
+WA,Frederickson Power LP,55818,F1CT,Unit ID change from 10645 to F1CT
+FL,"Quantum Lake Power, LP",54423,EU004,Unit ID change from 004 to EU004
+FL,"Quantum Lake Power, LP",54423,EU003,Unit ID change from 003 to EU003
+GA,Bowen,703,6A,Unit ID change from 6 to 6A
+CA,"Otay Mesa Energy Center, LLC",55345,CTG-2,Unit ID change from CTGZ2 to CTG-2
+CA,"Otay Mesa Energy Center, LLC",55345,CTGZ2,Unit ID change from 0CTGZ2 to CTGZ2
+CA,"Otay Mesa Energy Center, LLC",55345,CTG-1,Unit ID change from CTGZ1 to CTG-1
+CA,"Otay Mesa Energy Center, LLC",55345,CTGZ1,Unit ID change from 0CTGZ1 to CTGZ1
+AR,Dell Power Plant,55340,2,Unit ID change from SN02 to 2
+AR,Dell Power Plant,55340,1,Unit ID change from SN01 to 1
+TX,Odessa Ector Generating Station,55215,GT4,Unit ID change from HRSG4 to GT4
+TX,Odessa Ector Generating Station,55215,GT3,Unit ID change from HRSG3 to GT3
+TX,Odessa Ector Generating Station,55215,GT2,Unit ID change from HRSG2 to GT2
+TX,Odessa Ector Generating Station,55215,GT1,Unit ID change from HRSG1 to GT1
+TX,Wolf Hollow Generating Station,55139,AUXBLR,Unit ID change from AUX to AUXBLR
+TX,Sandy Creek Energy Station,56611,S01,Unit ID change from 1 to S01
+VA,Marsh Run Generation Facility,7836,EU4,Unit ID change from 4 to EU4
+VA,Marsh Run Generation Facility,7836,EU3,Unit ID change from 3 to EU3
+VA,Marsh Run Generation Facility,7836,EU2,Unit ID change from 2 to EU2
+VA,Marsh Run Generation Facility,7836,EU1,Unit ID change from 1 to EU1
+MI,Eckert Station,1831,14,Unit ID change from MP14 to 14
+CA,Moss Landing,260,4A,Unit ID change from 2B to 4A
+CA,Moss Landing,260,3A,Unit ID change from 1B to 3A
+AZ,Mesquite Generating Station,55481,6,Unit ID change from 4 to 6
+AZ,Mesquite Generating Station,55481,5,Unit ID change from 3 to 5
+WI,Island Street Peaking Plant,55836,1B,Unit ID change from CT1B to 1B
+WI,Island Street Peaking Plant,55836,1A,Unit ID change from CT1A to 1A
+TX,Greens Bayou,3464,GBY84,Unit ID change from 84 to GBY84
+TX,Greens Bayou,3464,GBY83,Unit ID change from 83 to GBY83
+TX,Greens Bayou,3464,GBY82,Unit ID change from 82 to GBY82
+TX,Greens Bayou,3464,GBY81,Unit ID change from 81 to GBY81
+TX,Greens Bayou,3464,GBY74,Unit ID change from 74 to GBY74
+TX,Greens Bayou,3464,GBY73,Unit ID change from 73 to GBY73
+FL,Intercession City,8049,6A,Unit ID change from P6 to 6A
+FL,Intercession City,8049,5A,Unit ID change from P5 to 5A
+FL,Intercession City,8049,4A,Unit ID change from P4 to 4A
+FL,Intercession City,8049,1A,Unit ID change from P1 to 1A
+FL,Intercession City,8049,3A,Unit ID change from P3 to 3A
+FL,Intercession City,8049,2A,Unit ID change from P2 to 2A
+AR,Fulton,7825,CT1,Unit ID change from 1 to CT1
+NY,Bethpage Energy Center,50292,GT3,Unit ID change from 3 to GT3
+MS,Moselle Generating Plant,2070,5,Unit ID change from **5 to 5
+CA,Lambie Energy Center,55626,UNIT1,Unit ID change from 1 to UNIT1
+GA,Mitchell (GA),727,4CA,Unit ID change from 4C to 4CA
+GA,Mitchell (GA),727,4BA,Unit ID change from 4B to 4BA
+GA,Mitchell (GA),727,4AA,Unit ID change from 4A to 4AA
+LA,Plaquemine Cogen Facility,55419,600,Unit ID change from GT-600 to 600
+LA,Plaquemine Cogen Facility,55419,500,Unit ID change from GT-500 to 500
+LA,Plaquemine Cogen Facility,55419,800,Unit ID change from GT-800 to 800
+LA,Plaquemine Cogen Facility,55419,700,Unit ID change from GT-700 to 700
+TX,T H Wharton,3469,THW56,Unit ID change from 56 to THW56
+TX,T H Wharton,3469,THW55,Unit ID change from 55 to THW55
+TX,T H Wharton,3469,THW54,Unit ID change from 54 to THW54
+TX,T H Wharton,3469,THW53,Unit ID change from 53 to THW53
+TX,T H Wharton,3469,THW52,Unit ID change from 52 to THW52
+TX,T H Wharton,3469,THW51,Unit ID change from 51 to THW51
+TX,T H Wharton,3469,THW44,Unit ID change from 44 to THW44
+TX,T H Wharton,3469,THW43,Unit ID change from 43 to THW43
+TX,T H Wharton,3469,THW42,Unit ID change from 42 to THW42
+TX,T H Wharton,3469,THW41,Unit ID change from 41 to THW41
+TX,T H Wharton,3469,THW34,Unit ID change from 34 to THW34
+TX,T H Wharton,3469,THW33,Unit ID change from 33 to THW33
+TX,T H Wharton,3469,THW32,Unit ID change from 32 to THW32
+TX,T H Wharton,3469,THW31,Unit ID change from 31 to THW31
+IL,"LSP University Park, LLC",55640,CT09,Unit ID change from 9 to CT09
+IL,"LSP University Park, LLC",55640,CT08,Unit ID change from 8 to CT08
+IL,"LSP University Park, LLC",55640,CT07,Unit ID change from 7 to CT07
+IL,"LSP University Park, LLC",55640,CT06,Unit ID change from 6 to CT06
+IL,"LSP University Park, LLC",55640,CT05,Unit ID change from 5 to CT05
+IL,"LSP University Park, LLC",55640,CT04,Unit ID change from 4 to CT04
+IL,"LSP University Park, LLC",55640,CT03,Unit ID change from 3 to CT03
+IL,"LSP University Park, LLC",55640,CT02,Unit ID change from 2 to CT02
+IL,"LSP University Park, LLC",55640,CT12,Unit ID change from 12 to CT12
+IL,"LSP University Park, LLC",55640,CT11,Unit ID change from 11 to CT11
+IL,"LSP University Park, LLC",55640,CT10,Unit ID change from 10 to CT10
+IL,"LSP University Park, LLC",55640,CT01,Unit ID change from 1 to CT01
+AL,Decatur Energy Center,55292,CTG-3,Unit ID change from CT3 to CTG-3
+AL,Decatur Energy Center,55292,CTG-2,Unit ID change from CT2 to CTG-2
+AL,Decatur Energy Center,55292,CTG-1,Unit ID change from CT1 to CTG-1
+AL,Morgan Energy Center,55293,CT-3,Unit ID change from CT3 to CT-3
+AL,Morgan Energy Center,55293,CT-2,Unit ID change from CT2 to CT-2
+AL,Morgan Energy Center,55293,CT-1,Unit ID change from CT1 to CT-1
+TX,"Brazos Valley Energy, LP",55357,CTG2,Unit ID change from CTG002 to CTG2
+TX,"Brazos Valley Energy, LP",55357,CTG1,Unit ID change from CTG001 to CTG1
+TX,"Brazos Valley Energy, LP",55357,CTG4,Unit ID change from DB002 to CTG4
+TX,"Brazos Valley Energy, LP",55357,DB002,Unit ID change from 0DB002 to DB002
+TX,"Brazos Valley Energy, LP",55357,CTG3,Unit ID change from DB001 to CTG3
+TX,"Brazos Valley Energy, LP",55357,DB001,Unit ID change from 0DB001 to DB001
+ID,Bennett Mountain Power Project,55733,CT01,Unit ID change from 01 to CT01
+CA,Roseville Energy Park,56298,CT002,Unit ID change from 2 to CT002
+CA,Roseville Energy Park,56298,CT001,Unit ID change from 1 to CT001
+MN,Cannon Falls Energy Center,56241,CT-02,Unit ID change from 2 to CT-02
+MN,Cannon Falls Energy Center,56241,CT-01,Unit ID change from 1 to CT-01
+AZ,APS West Phoenix Power Plant,117,CC5A,Unit ID change from CC5 to CC5A
+FL,Suwannee River,638,3A,Unit ID change from P3 to 3A
+FL,Suwannee River,638,2A,Unit ID change from P2 to 2A
+FL,Suwannee River,638,1A,Unit ID change from P1 to 1A
+NY,Selkirk Cogen Partners,10725,CTG301,Unit ID change from 00003 to CTG301
+NY,Selkirk Cogen Partners,10725,CTG201,Unit ID change from 00002 to CTG201
+NY,Selkirk Cogen Partners,10725,CTG101,Unit ID change from 00001 to CTG101
+MS,David M Ratcliffe,57037,AB-002,Unit ID change from AB002 to AB-002
+MS,David M Ratcliffe,57037,AB-001,Unit ID change from AB001 to AB-001
+NY,Poletti 500 MW CC,56196,CTG7A,Unit ID change from 1 to CTG7A
+MN,Cambridge Station,2038,2,Unit ID change from 002 to 2
+GA,Mid-Georgia Cogeneration,55040,2,Unit ID change from 201 to 2
+GA,Mid-Georgia Cogeneration,55040,201,Unit ID change from 2 to 201
+GA,Mid-Georgia Cogeneration,55040,1,Unit ID change from 101 to 1
+GA,Mid-Georgia Cogeneration,55040,101,Unit ID change from 1 to 101
+PA,Helix Ironwood LLC,55337,2,Unit ID change from 2 to 0002
+PA,Helix Ironwood LLC,55337,1,Unit ID change from 1 to 0001
+FL,Fort Myers,612,GFM10,Unit ID change from GMF10 to GFM10
+FL,Fort Myers,612,GFM09,Unit ID change from GFM9 to GFM09
+FL,Fort Myers,612,GFM08,Unit ID change from GFM8 to GFM08
+FL,Fort Myers,612,GFM07,Unit ID change from GFM7 to GFM07
+FL,Fort Myers,612,GFM06,Unit ID change from GFM6 to GFM06
+FL,Fort Myers,612,GFM05,Unit ID change from GFM5 to GFM05
+FL,Fort Myers,612,GFM04,Unit ID change from GFM4 to GFM04
+FL,Fort Myers,612,GFM03,Unit ID change from GFM3 to GFM03
+FL,Fort Myers,612,GFM02,Unit ID change from GFM2 to GFM02
+FL,Fort Myers,612,GFM01,Unit ID change from GFM1 to GFM01
+NM,Bluffview Power Plant,55977,CTG-1,Unit ID change from CTG1 to CTG-1
+MS,Red Hills Generation Facility,55076,AA004,Unit ID change from AA-004 to AA004
+MS,Red Hills Generation Facility,55076,AA003,Unit ID change from AA-003 to AA003
+MS,Red Hills Generation Facility,55076,AA002,Unit ID change from AA-002 to AA002
+MS,Red Hills Generation Facility,55076,AA001,Unit ID change from AA-001 to AA001
+MA,NSTAR Electric Cannon Street,1616,2,Unit ID change from 000002 to 2
+MA,NSTAR Electric Cannon Street,1616,1,Unit ID change from 000001 to 1
+NV,Walter M. Higgins III Generating Station,55687,BHG2,Unit ID change from BHN2 to BHG2
+NV,Walter M. Higgins III Generating Station,55687,BHG1,Unit ID change from BHN1 to BHG1
+UT,Nebo Power Station,56177,U1,Unit ID change from 1 to U1
+NY,S A Carlson,2682,20,Unit ID change from 7 to 20
+NY,S A Carlson,2682,7,Unit ID change from 20 to 7
+CA,Riverside Energy Resource Center,56143,2,Unit ID change from UNIT2 to 2
+CA,Riverside Energy Resource Center,56143,1,Unit ID change from UNIT1 to 1
+OH,Dresden Energy Facility,55350,1B,Unit ID change from 2 to 1B
+OH,Dresden Energy Facility,55350,1A,Unit ID change from 1 to 1A
+CA,"Delano Energy Center, LLC",58122,GEN1,"Delano Energy Center, LLC (ORISPL 58122) Unit GEN1 in California was previously Wellhead Power Gates, LLC (ORISPL 55875) Unit GT1 in California, and started submitting emissions at the new location in Q1 2013"
+FL,Indian River (55318),55318,1,"Indian River (ORISPL 55318) Unit 1 in Florida was previously Indian River (ORISPL 683) Unit 1 in Florida, and started submitting emissions at the new location in Q2 2000"
+FL,Indian River (55318),55318,2,"Indian River (ORISPL 55318) Unit 2 in Florida was previously Indian River (ORISPL 683) Unit 2 in Florida, and started submitting emissions at the new location in Q2 2000"
+FL,Indian River (55318),55318,3,"Indian River (ORISPL 55318) Unit 3 in Florida was previously Indian River (ORISPL 683) Unit 3 in Florida, and started submitting emissions at the new location in Q2 2000"
+FL,Auburndale Peaker Energy Center,55833,6,"Auburndale Peaker Energy Center (ORISPL 55833) Unit 6 in Florida was previously Quantum Auburndale Power, LP (ORISPL 54658) Unit 6 in Florida, and started submitting emissions at the new location in Q1 2009"
+GA,Wansley CC (55965),55965,6A,"Wansley CC (ORISPL 55965) Unit 6A in Georgia was previously Wansley (ORISPL 6052) Unit 6A in Georgia, and started submitting emissions at the new location in Q1 2012"
+GA,Wansley CC (55965),55965,6B,"Wansley CC (ORISPL 55965) Unit 6B in Georgia was previously Wansley (ORISPL 6052) Unit 6B in Georgia, and started submitting emissions at the new location in Q1 2012"
+GA,Wansley CC (55965),55965,7A,"Wansley CC (ORISPL 55965) Unit 7A in Georgia was previously Wansley (ORISPL 6052) Unit 7A in Georgia, and started submitting emissions at the new location in Q1 2012"
+GA,Wansley CC (55965),55965,7B,"Wansley CC (ORISPL 55965) Unit 7B in Georgia was previously Wansley (ORISPL 6052) Unit 7B in Georgia, and started submitting emissions at the new location in Q1 2012"
+IN,Wabash River Highland Plant,57842,1,"Wabash River Highland Plant (ORISPL 57842) Unit 1 in Indiana was previously Wabash River Gen Station (ORISPL 1010) Unit 1 in Indiana, and started submitting emissions at the new location in Q1 2017"

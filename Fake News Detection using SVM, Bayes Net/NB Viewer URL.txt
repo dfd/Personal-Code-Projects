@@ -1,1 +1,1 @@
-httpsnbviewer.jupyter.orggithubngekakisPDS_FakeNewsblobmasterFinal%20Project%20-%20PDS%20v3.ipynbflush_cache=true
+https://nbviewer.jupyter.org/github/ngekakis/PDS_FakeNews/blob/master/Final%20Project%20-%20PDS%20v3.ipynb?flush_cache=true
